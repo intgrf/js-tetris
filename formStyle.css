@@ -1,0 +1,43 @@
+body {
+    padding: 50px;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    background: cadetblue;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0 midnightblue;
+}
+
+label {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0 midnightblue;
+}
+
+#nameInput {
+    text-align: center;
+}
+
+#button {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-style: italic;
+    color: midnightblue;
+    box-shadow: 5px 5px 0 rgba(204, 204, 204, 0.2);
+    border-radius: 30px;
+}
+
+#source {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 0 rgba(204, 204, 204, 0.2);
+    border-radius: 30px;
+}
+

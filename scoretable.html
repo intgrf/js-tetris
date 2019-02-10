@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tetris: scores</title>
+</head>
+<body style="background-image: url(simple.jpg);"  >
+<div id="background">
+    <table id="scoreTable" cellpadding="10px">
+        <caption style="padding: 1em;"><h1>TOP SCORES</h1></caption>
+        <thead>
+        <tr>
+            <th>PLAYER</th>
+            <th>SCORE</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+<br> <br>
+<div style="text-align: center">
+    <form action="index.html">
+        <input class="button" type="submit" value="Restart">
+    </form>
+</div>
+<script>
+
+    let scores = JSON.parse(localStorage["table"]);
+    let tbody = document.getElementById("tableBody");
+    for (let i = 0; i < scores.length; i++) {
+        let newRow = tbody.insertRow(tbody.rows.length);
+        let firstCell = newRow.insertCell(0);
+        firstCell.innerHTML = scores[i].name;
+        let secondCell = newRow.insertCell(1);
+        secondCell.innerHTML = scores[i].points;
+    }
+    let background = document.getElementById("background");
+    let size = scores.length * 20;
+    background.setAttribute("height", size.toString() + "px");
+</script>
+
+</body>
+
+</html>

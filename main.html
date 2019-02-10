@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(simple.jpg)">
+<h1>TETRIS</h1>
+
+<div id="base">
+    <canvas id="canvas" width="300" height="600" ></canvas>
+    <div id="rightPanel">
+        <h2><em> Player: </em></h2> <div id="player"></div>
+        <script>
+            document.getElementById('player').innerHTML = localStorage["playerName"];
+        </script>
+        <h2><em>Next:</em></h2>
+        <canvas id="nextFigure" width="180" height="150" class="rightAlign"></canvas>
+        <h2><em>Level:</em></h2><div id="level"></div>
+        <h2><em>Score:</em></h2> <div id="score"></div>
+        <h2><em>Control keys:</em></h2>
+        <p><b><em>Up-Arrow</em></b> = rotate</p>
+        <p><b><em>Left-Arrow</em></b> = move left</p>
+        <p><b><em>Right-Arrow</em></b> = move right</p>
+        <p><b><em>Down-Arrow</em></b> = drop</p>
+
+    </div>
+</div>
+
+<script src="controller.js"></script>
+<script src="canvas.js"> </script>
+<script src="game.js"></script>
+
+</body>
+</html>

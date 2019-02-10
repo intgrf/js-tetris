@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+table {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid midnightblue;
+    border-collapse: collapse;
+    background: rgba(245, 245, 245, 1);
+    box-shadow: 10px 10px 0 rgba(204, 204, 204, 0.3);
+    font-size: 20px;
+}
+
+th, td {
+    width: 20%;
+    border: 1px solid midnightblue;
+}
+
+
+caption {
+    text-align: center;
+    color: #cccccc;
+    text-shadow: 2px 2px 0 midnightblue;
+}
